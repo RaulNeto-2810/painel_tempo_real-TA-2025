@@ -5,6 +5,7 @@ Um sistema de monitoramento em tempo real que exibe estatísticas de usuários c
 ## 📋 Sobre o Projeto
 
 Este projeto implementa um painel (dashboard) avançado que monitora em tempo real:
+
 - Número total de usuários conectados
 - Sala mais popular
 - Ranking completo de todas as salas ativas
@@ -16,12 +17,14 @@ O painel é atualizado automaticamente a cada segundo, proporcionando uma experi
 ## ✨ Funcionalidades
 
 ### 🎯 Recursos Principais
+
 - **Monitoramento de Usuários**: Contagem em tempo real de todos os clientes conectados
 - **Análise de Salas**: Identificação automática da sala com maior número de usuários
 - **Atualizações Automáticas**: Dados atualizados a cada segundo via WebSocket
 - **Interface Responsiva**: Design adaptável para diferentes dispositivos
 
 ### 🌟 Recursos Avançados
+
 - **Ranking Dinâmico**: Lista ordenada de todas as salas ativas por popularidade
 - **Gráfico Interativo**: Visualização em barras usando Chart.js
 - **Sistema de Alertas**: Notificações visuais quando uma sala excede 5 usuários
@@ -29,13 +32,13 @@ O painel é atualizado automaticamente a cada segundo, proporcionando uma experi
 
 ## �️ Tecnologias Utilizadas
 
-| Categoria | Tecnologia | Versão |
-|-----------|------------|--------|
-| **Backend** | Node.js | 16+ |
-| **Framework Web** | Express.js | ^5.1.0 |
-| **WebSocket** | Socket.IO | ^4.8.1 |
-| **Frontend** | HTML5, CSS3, JavaScript | Vanilla |
-| **Gráficos** | Chart.js | CDN |
+| Categoria         | Tecnologia              | Versão  |
+| ----------------- | ----------------------- | ------- |
+| **Backend**       | Node.js                 | 16+     |
+| **Framework Web** | Express.js              | ^5.1.0  |
+| **WebSocket**     | Socket.IO               | ^4.8.1  |
+| **Frontend**      | HTML5, CSS3, JavaScript | Vanilla |
+| **Gráficos**      | Chart.js                | CDN     |
 
 ## 📁 Estrutura do Projeto
 
@@ -53,6 +56,7 @@ painel_tempo_real-TA-2025/
 ## 🚀 Como Executar o Projeto
 
 ### Pré-requisitos
+
 - **Node.js** versão 16 ou superior
 - **npm** (vem com o Node.js)
 - Navegador web moderno
@@ -60,22 +64,26 @@ painel_tempo_real-TA-2025/
 ### 📥 Instalação e Execução
 
 1. **Clone ou baixe o projeto:**
+
    ```bash
    git clone <url-do-repositorio>
    cd painel_tempo_real-TA-2025
    ```
 
 2. **Instale as dependências:**
+
    ```bash
    npm install
    ```
 
 3. **Inicie o servidor:**
+
    ```bash
    node server.js
    ```
-   
+
    Você verá a mensagem:
+
    ```
    Servidor rodando em http://localhost:3000
    ```
@@ -87,10 +95,12 @@ painel_tempo_real-TA-2025/
 ### 🧪 Como Testar
 
 1. **Teste Básico:**
+
    - Abra a aplicação em múltiplas abas do navegador
    - Observe o contador de usuários aumentar
 
 2. **Teste de Salas:**
+
    - Digite nomes de salas diferentes no campo de texto
    - Clique em "Entrar na Sala"
    - Observe o ranking e gráfico se atualizarem
@@ -102,11 +112,13 @@ painel_tempo_real-TA-2025/
 ### 🔧 Configuração Avançada
 
 **Alternar Porta:**
+
 ```bash
 PORT=4000 node server.js
 ```
 
 **Variáveis de Ambiente:**
+
 - `PORT`: Define a porta do servidor (padrão: 3000)
 
 ## 📊 Como Funciona
@@ -120,11 +132,8 @@ PORT=4000 node server.js
 ## 🤝 Contribuições
 
 Este projeto foi desenvolvido como atividade prática e está aberto para melhorias:
+
 - Adicionar persistência de dados
 - Implementar autenticação de usuários
 - Melhorar design responsivo
 - Adicionar mais tipos de gráficos
-
-## 📝 Licença
-
-Este projeto é de uso educacional e está disponível sob a licença ISC.
