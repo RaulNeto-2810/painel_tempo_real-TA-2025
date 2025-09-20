@@ -109,18 +109,6 @@ painel_tempo_real-TA-2025/
    - Abra 6 ou mais abas na mesma sala
    - Veja o alerta de lotação aparecer
 
-### 🔧 Configuração Avançada
-
-**Alternar Porta:**
-
-```bash
-PORT=4000 node server.js
-```
-
-**Variáveis de Ambiente:**
-
-- `PORT`: Define a porta do servidor (padrão: 3000)
-
 ## 📊 Como Funciona
 
 1. **Conexão**: Usuários conectam via WebSocket ao acessar a página
@@ -128,12 +116,3 @@ PORT=4000 node server.js
 3. **Monitoramento**: Servidor tracked conexões e distribuição por salas
 4. **Broadcast**: A cada segundo, estatísticas são enviadas para todos os clientes
 5. **Visualização**: Frontend atualiza painel, ranking e gráfico automaticamente
-
-## 🤝 Contribuições
-
-Este projeto foi desenvolvido como atividade prática e está aberto para melhorias:
-
-- Adicionar persistência de dados
-- Implementar autenticação de usuários
-- Melhorar design responsivo
-- Adicionar mais tipos de gráficos
