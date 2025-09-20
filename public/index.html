@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Avançado em Tempo Real</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Painel Avançado em Tempo Real</h1>
+        <div id="alert-banner"></div>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>Usuários Online</h2>
+                <p id="total-users">0</p>
+            </div>
+            <div class="card">
+                <h2>Sala Mais Popular</h2>
+                <p id="most-popular-room">Nenhuma</p>
+            </div>
+            <div class="card" id="room-ranking">
+                <h2>Ranking das Salas</h2>
+                <ol id="ranking-list"></ol>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="room-name" placeholder="Digite o nome da sala">
+            <button onclick="joinRoom()">Entrar ou Trocar de Sala</button>
+        </div>
+
+        <div class="card">
+            <h2>Gráfico de Usuários por Sala</h2>
+            <canvas id="roomsChart"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
